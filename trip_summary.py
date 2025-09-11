@@ -14,15 +14,16 @@ with open(filename,"r") as file:
         #this will calculate trip duration in minutes
         duration=(end_time - start_time).total_seconds() / 60
         durations.append(duration) #store the trip duration in the list
-        #now calculate summary
-        total_trips=len(durations)
-        total_time=sum(durations)
-        average_time=total_time/total_trips if total_trips > 0 else 0
-        #now show results
-        print("Trip Summary")
-        print("Total trips:",total_trips)
-        print("Total time(minutes):",total_time)
-        print("Average trip time(minutes)",average_time)
+#now calculate summary
+total_trips=len(durations)
+total_time=sum(durations)
+average_time=total_time/total_trips if total_trips > 0 else 0
+#now show results
+print("Trip Summary")
+print("Total trips:",total_trips)
+print("Total time(minutes):",total_time)
+print("Average trip time(minutes)",average_time)
+
 
 
 
